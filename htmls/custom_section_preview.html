@@ -1,0 +1,340 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Custom Jewellery - Section Preview</title>
+<style>
+  :root{--black:#0b0b0b;--white:#f6f6f6;--accent:#000;}
+  body{font-family:Inter, system-ui, -apple-system, "Helvetica Neue", Arial; margin:0;background:var(--white);color:var(--black);}
+  .wrap{max-width:1200px;margin:40px auto;padding:24px;}
+  .section{display:grid;grid-template-columns:1fr 520px;gap:40px;align-items:center;padding:48px;border-radius:28px;}
+  .section.white{background:var(--white);box-shadow:0 6px 30px rgba(11,11,11,0.05);}
+  .section.black{background:var(--black);color:var(--white);}
+  .headline{font-weight:800;font-size:48px;line-height:1.03;margin:0 0 16px;}
+  .sub{max-width:560px;font-size:16px;opacity:0.9;margin-bottom:22px;}
+  .cta-row{display:flex;gap:16px;align-items:center;}
+  .btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.08);}
+  .btn.primary{background:linear-gradient(90deg,#ffd700,#ff6a00);color:#111;}
+  .btn.ghost{background:transparent;border:2px solid rgba(0,0,0,0.08);color:inherit;padding:12px 18px;}
+  .feature-list{display:flex;gap:12px;margin-top:26px;}
+  .feature{background:rgba(0,0,0,0.03);padding:12px 14px;border-radius:12px;font-size:14px;display:flex;gap:10px;align-items:center;}
+  .image-card{border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(11,11,11,0.12);}
+  .image-card img{width:100%;height:100%;object-fit:cover;display:block;}
+  .steps{display:flex;gap:16px;margin-top:28px;}
+  .step{flex:1;background:rgba(0,0,0,0.03);padding:18px;border-radius:14px;text-align:center;}
+  .step h4{margin:0 0 8px;font-size:15px;}
+  .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.06);font-weight:700;font-size:12px;}
+  /* Dark mode adjustments */
+  .section.black .feature{background:rgba(255,255,255,0.06);}
+  .section.black .btn.primary{color:#fff;filter:brightness(0.95);}
+  .section.black .btn.ghost{border-color:rgba(255,255,255,0.14);}
+  /* Responsive */
+  @media (max-width:900px){ .section{grid-template-columns:1fr; padding:36px;} .headline{font-size:36px;} .image-card{height:360px;} .feature-list{flex-direction:column;align-items:flex-start;} .steps{flex-direction:column;} }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Section 1: White background, left text, right image -->
+    <section class="section white" aria-label="Custom Jewellery - Hero">
+      <div class="left">
+        <div class="badge">Custom • Made</div>
+        <h1 class="headline">Custom Jewellery — Make it Yours.</h1>
+        <p class="sub">Tell us the idea, choose materials & finishes, approve the 3D mockup — we’ll craft the rest. Premium hip-hop designs, built to flex.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#">Start Your Custom</a>
+          <a class="btn ghost" href="#">See Process</a>
+        </div>
+
+        <div class="feature-list" aria-hidden="false">
+          <div class="feature"><strong>Lead time</strong>&nbsp;•&nbsp;4-6 weeks</div>
+          <div class="feature"><strong>Materials</strong>&nbsp;•&nbsp;925 Silver, Gold, VVS Moissanite</div>
+          <div class="feature"><strong>Guarantee</strong>&nbsp;•&nbsp;Lifetime Polishing</div>
+        </div>
+
+        <div class="steps" style="margin-top:28px;">
+          <div class="step">
+            <h4>1. Share idea</h4>
+            <div>Send photos or sketch</div>
+          </div>
+          <div class="step">
+            <h4>2. Review & approve</h4>
+            <div>3D mockup & revisions</div>
+          </div>
+          <div class="step">
+            <h4>3. Receive piece</h4>
+            <div>Ready to flex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-card" role="img" aria-label="Featured custom jewellery image">
+        <img src="/mnt/data/custom-jewellery-section-headline-custom_0YDcFPtkSTebzC5cKI-hHw_ZFLp5RjXTvCaYvO_itdHng.jpeg" alt="Model wearing custom chains and pendant">
+      </div>
+    </section>
+
+    <!-- Section 2: Dark background, right text, left image (alternating visual rhythm) -->
+    <section class="section black" style="margin-top:36px;grid-template-columns:520px 1fr" aria-label="Custom Jewellery - Promo">
+      <div class="image-card" style="margin-right:40px;">
+        <img src="/mnt/data/custom-jewellery-section-headline-custom_3YGWOmZJTT-ol7mclA5e7Q_ZFLp5RjXTvCaYvO_itdHng.jpeg" alt="Stacked diamond necklaces">
+      </div>
+
+      <div class="left" style="text-align:left;padding-left:6px;">
+        <div class="badge" style="background:rgba(255,255,255,0.08);color:#fff">Limited Drop</div>
+        <h1 class="headline" style="color:#fff;">Design Yours — Limited Iced Drops</h1>
+        <p class="sub" style="color:rgba(255,255,255,0.88);">Want a fully custom iced chain or grill? Choose the stones, design the layout and we’ll produce museum-quality shine.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#" style="background:#fff;color:#111;">Design Yours</a>
+          <a class="btn ghost" href="#" style="color:#fff;border-color:rgba(255,255,255,0.12);">Contact Designer</a>
+        </div>
+        <div style="margin-top:18px;color:rgba(255,255,255,0.85);font-size:14px;">
+          <strong>Starting at</strong> • Custom quotes from $499
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Product spotlight (white) -->
+    <section class="section white" style="margin-top:36px;grid-template-columns:1fr 420px;align-items:center;">
+      <div>
+        <h2 class="headline" style="font-size:34px;">Spotlight: Custom Signet Ring</h2>
+        <p class="sub">Precision-cut centre stone, hand-polished band, customizable face. Perfect for initials, logos, or custom artwork.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#">Request Quote</a>
+          <a class="btn ghost" href="#">View Details</a>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="/mnt/data/a-sleek-product-shot-advertisement-for-c_KFh_DMJaTbmt8oEUHmeXbg_ZFLp5RjXTvCaYvO_itdHng.jpeg" alt="Product spotlight - signet ring">
+      </div>
+    </section>
+
+    
+<!-- Improved Custom Jewellery Section (paste into page / theme) -->
+<section class="cj-section cj-section--light" aria-label="Custom jewellery — make it yours">
+  <div class="cj-inner">
+
+    <!-- Visual (left) -->
+    <div class="cj-visual" role="img" aria-label="Jeweller arranging stones">
+      <div class="cj-image">
+        <img src="/files/custom-jewelry-sample.jpg" alt="Jeweller arranging diamonds and gold on a workbench">
+        <div class="cj-floating">Exclusive Design</div>
+      </div>
+      <div class="cj-thumbs" aria-hidden="true">
+        <img src="/files/custom-jewelry-sample.jpg" alt="">
+        <img src="/files/custom-jewelry-sample-2.jpg" alt="">
+        <img src="/files/a-sleek-product-shot-advertisement-for-c_KFh_DMJaTbmt8oEUHmeXbg_ZFLp5RjXTvCaYvO_itdHng.jpeg" alt="">
+      </div>
+    </div>
+
+    <!-- Content (right) -->
+    <div class="cj-card" role="region" aria-labelledby="cj-title">
+      <div class="cj-kicker">Custom • Crafted</div>
+
+      <h2 id="cj-title" class="cj-title">
+        Custom Jewellery — <span class="cj-accent">Make It Yours</span>
+      </h2>
+
+      <p class="cj-lead">
+        Bring your dream piece to life. Share your vision, choose materials & finishes, approve the 3D mockup — we’ll craft a premium, street-ready piece that tells your story.
+      </p>
+
+      <div class="cj-actions">
+        <a class="cj-btn cj-btn--primary" href="/pages/custom-jewelry">Design Yours</a>
+        <a class="cj-btn cj-btn--ghost" href="#cj-process">See process</a>
+      </div>
+
+      <p class="cj-cad">
+        <strong>Receive your CAD mockup within 24–48 business hours</strong> after you submit a request — includes one complimentary revision.
+      </p>
+
+      <div class="cj-features" aria-hidden="false">
+        <div class="cj-feature">
+          <strong>Lead time</strong>
+          <span>4–6 weeks</span>
+        </div>
+        <div class="cj-feature">
+          <strong>Materials</strong>
+          <span>925 / 14k / 18k</span>
+        </div>
+        <div class="cj-feature">
+          <strong>Stones</strong>
+          <span>VVS Moissanite, CZ</span>
+        </div>
+      </div>
+
+      <div id="cj-process" class="cj-steps" aria-label="Custom process steps">
+        <div class="cj-step">
+          <!-- simple SVG icon -->
+          <svg class="cj-step-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 4v16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="cj-step-title">Share idea</div>
+          <div class="cj-step-sub">Upload photos or sketch</div>
+        </div>
+
+        <div class="cj-step">
+          <svg class="cj-step-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="cj-step-title">Review & approve</div>
+          <div class="cj-step-sub">3D mockup & revisions</div>
+        </div>
+
+        <div class="cj-step">
+          <svg class="cj-step-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-6 5 2 8-6-5-6 5 2-8-6-5h7z" fill="currentColor" opacity="0.08"/></svg>
+          <div class="cj-step-title">Receive piece</div>
+          <div class="cj-step-sub">Handcrafted & inspected</div>
+        </div>
+      </div>
+
+      <div class="cj-trust">
+        <div class="cj-trust-item">
+          <strong>Free resizing</strong>
+          <span>Included on all customs</span>
+        </div>
+        <div class="cj-trust-item">
+          <strong>Lifetime polish</strong>
+          <span>Keep the shine for years</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- Improved Custom Jewellery Styling ---------- */
+:root{
+  --fg:#111;
+  --bg:#fff;
+  --gold-1:#ffd700;
+  --gold-2:#ff7a00;
+  --muted:#6b6b6b;
+  --radius:16px;
+  --shadow-lg: 0 24px 60px rgba(11,11,11,0.12);
+  --shadow-sm: 0 8px 20px rgba(11,11,11,0.06);
+  --ease: cubic-bezier(.2,.9,.2,1);
+  --container:1080px;
+  --gap:26px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* layout */
+.cj-section{background:var(--bg);color:var(--fg);padding:56px 20px;}
+.cj-inner{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:1fr 520px;gap:var(--gap);align-items:center;}
+
+@media (max-width:980px){
+  .cj-inner{grid-template-columns:1fr; padding:0 12px;}
+}
+
+/* visual */
+.cj-image{border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);position:relative;border:1px solid rgba(0,0,0,0.04);}
+.cj-image img{display:block;width:100%;height:520px;object-fit:cover;transition:transform .6s var(--ease);}
+.cj-image:hover img{transform:scale(1.03);}
+.cj-floating{position:absolute;right:18px;bottom:18px;padding:8px 12px;border-radius:12px;font-weight:800;background:linear-gradient(90deg,var(--gold-1),var(--gold-2));color:#111;box-shadow:0 14px 30px rgba(0,0,0,0.18);}
+
+/* thumbs */
+.cj-thumbs{display:flex;gap:8px;margin-top:14px}
+.cj-thumbs img{height:56px;width:92px;object-fit:cover;border-radius:8px;box-shadow:var(--shadow-sm);}
+
+/* card (right) */
+.cj-card{background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));padding:26px;border-radius:14px;border-left:4px solid var(--gold-1);box-shadow:var(--shadow-sm);}
+
+/* kicker & title */
+.cj-kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.03);font-weight:800;font-size:13px;margin-bottom:10px;color:var(--muted);}
+.cj-title{font-size:2.1rem;line-height:1.04;margin:6px 0 12px 0;font-weight:800;letter-spacing:-0.02em;}
+.cj-accent{background:linear-gradient(90deg,var(--gold-1),var(--gold-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block;}
+
+/* lead paragraph */
+.cj-lead{color:rgba(0,0,0,0.85);margin:0 0 18px;font-size:15px;max-width:60ch;}
+
+/* actions */
+.cj-actions{display:flex;gap:12px;align-items:center;margin-bottom:14px;}
+.cj-btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;font-weight:800;text-decoration:none;transition:transform .22s var(--ease),box-shadow .22s var(--ease);}
+.cj-btn:focus{outline:3px solid rgba(255,215,0,0.12);outline-offset:4px;}
+.cj-btn--primary{background:linear-gradient(90deg,var(--gold-1),var(--gold-2));color:#111;box-shadow:0 12px 30px rgba(255,160,0,0.12);}
+.cj-btn--primary:hover{transform:translateY(-3px);}
+.cj-btn--ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);color:var(--fg);padding:11px 18px}
+
+/* CAD promise */
+.cj-cad{margin:8px 0 18px;font-weight:700;color:rgba(0,0,0,0.92);}
+.cj-cad .em{color:var(--gold-1)}
+
+/* features */
+.cj-features{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.cj-feature{background:rgba(0,0,0,0.03);padding:12px;border-radius:10px;text-align:center;font-weight:800;font-size:13px}
+.cj-feature span{display:block;font-weight:600;margin-top:6px;color:rgba(0,0,0,0.75);font-size:13px}
+
+/* steps */
+.cj-steps{display:flex;gap:12px;margin-top:8px}
+.cj-step{flex:1;background:rgba(0,0,0,0.02);padding:12px;border-radius:10px;text-align:center}
+.cj-step-icon{width:34px;height:34px;margin:0 auto 8px;display:block;stroke:var(--gold-1);fill:none}
+.cj-step-title{font-weight:800}
+.cj-step-sub{font-size:13px;color:rgba(0,0,0,0.7);margin-top:6px}
+
+/* trust */
+.cj-trust{display:flex;gap:18px;margin-top:16px}
+.cj-trust-item{font-size:14px}
+.cj-trust-item strong{display:block}
+
+/* responsive */
+@media (max-width:980px){
+  .cj-card{padding:20px}
+  .cj-image img{height:420px}
+  .cj-title{font-size:1.6rem}
+  .cj-features{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:620px){
+  .cj-image img{height:260px}
+  .cj-features{grid-template-columns:1fr}
+  .cj-steps{flex-direction:column}
+  .cj-inner{gap:18px}
+}
+
+/* reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  .cj-image img{transition:none}
+  .cj-btn{transition:none}
+}
+</style>
+
+
+
+<section class="custom-jewellery-section" style="background: #fff; color: #000; font-family: 'Arial', sans-serif; padding: 60px 20px; max-width: 900px; margin: auto;">
+  <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 15px;">
+    Custom Jewellery — Make It Yours
+  </h2>
+  <p style="font-size: 1.1rem; color: #555; margin-bottom: 40px;">
+    Share your idea, choose premium materials, approve the design, and we’ll craft the perfect piece just for you.
+  </p>
+
+  <div style="display: flex; gap: 20px; justify-content: space-between; margin-bottom: 40px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 10px;">💡</div>
+      <p style="font-weight: bold; margin-bottom: 5px;">Submit your idea</p>
+      <p style="font-size: 0.9rem; color: #666;">Tell us what you envision — no idea is too bold or detailed.</p>
+    </div>
+
+    <div style="flex: 1; min-width: 200px; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 10px;">🖋️</div>
+      <p style="font-weight: bold; margin-bottom: 5px;">Approve 3D mockup & pricing</p>
+      <p style="font-size: 0.9rem; color: #666;">Review your custom design and confirm everything before we start crafting.</p>
+    </div>
+
+    <div style="flex: 1; min-width: 200px; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 10px;">🎁</div>
+      <p style="font-weight: bold; margin-bottom: 5px;">Receive handcrafted piece</p>
+      <p style="font-size: 0.9rem; color: #666;">Get a one-of-a-kind creation, designed just for you with expert craftsmanship.</p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="/custom-jewellery" style="background: #000; color: #fff; padding: 18px 36px; font-weight: bold; text-decoration: none; border-radius: 50px; font-size: 1rem; transition: background 0.3s;">
+      Design Yours
+    </a>
+    <p style="font-size: 0.85rem; color: #888; margin-top: 10px;">
+      Avg lead time 4–6 weeks. Every piece is handcrafted to perfection.
+    </p>
+  </div>
+</section>
+
+  </div>
+</body>
+</html>
