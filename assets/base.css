@@ -3886,3 +3886,145 @@ predictive-search .predictive-search__form input[type="search"]::placeholder {
   --color-background: var(--luxe-bg);
   --color-text: var(--luxe-text);
 }
+
+/* ===================== Dark Luxe — Global (Scheme 1) ===================== */
+.color-scheme-1 {
+  --luxe-bg: #000000;
+  --luxe-text: #ffffff;
+  --luxe-accent: #F3C623;
+  --luxe-accent-contrast: #000000;
+  --luxe-muted: rgba(255,255,255,0.6);
+  --luxe-sep: rgba(255,255,255,0.06);
+  --luxe-focus: rgba(243,198,35,0.12);
+}
+
+.color-scheme-1 .button,
+.color-scheme-1 .shopify-challenge__button,
+.color-scheme-1 .customer button { border-radius: 8px; }
+
+.color-scheme-1 .button--secondary,
+.color-scheme-1 .button--primary {
+  --color-button: 243,198,35; /* #F3C623 */
+  --color-button-text: 0,0,0; /* black */
+  --alpha-button-background: 1;
+}
+
+.color-scheme-1 .button--tertiary {
+  --color-button: 255,255,255;
+  --color-button-text: 255,255,255;
+  --alpha-button-background: 0;
+}
+
+.color-scheme-1 .field__input,
+.color-scheme-1 .select__select,
+.color-scheme-1 .customer .field input,
+.color-scheme-1 .customer select {
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.color-scheme-1 .field__input::placeholder { color: var(--luxe-muted); }
+.color-scheme-1 .field__input:focus-visible,
+.color-scheme-1 .select__select:focus-visible,
+.color-scheme-1 .customer .field input:focus-visible,
+.color-scheme-1 .customer select:focus-visible { box-shadow: 0 0 0 4px var(--luxe-focus); }
+
+.color-scheme-1 .badge {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--luxe-sep);
+  color: var(--luxe-text);
+  border-radius: 999px;
+}
+
+.color-scheme-1 .pagination__item--current,
+.color-scheme-1 .pagination__item[aria-current="page"] {
+  background: var(--luxe-accent);
+  color: var(--luxe-accent-contrast);
+  border-radius: 8px;
+}
+
+.color-scheme-1 hr { background-color: var(--luxe-sep); }
+.color-scheme-1 a:hover { color: var(--luxe-accent); }
+
+.color-scheme-1 predictive-search .predictive-search__form input[type="search"] {
+  background: rgba(255,255,255,0.06);
+  color: var(--luxe-text);
+  border: 1px solid var(--luxe-sep);
+}
+
+/* ===================== Dark Luxe — Button System ===================== */
+.color-scheme-1 .button,
+.color-scheme-1 .shopify-challenge__button,
+.color-scheme-1 .customer button {
+  background-color: #000000;
+  color: #F3C623;
+  border: 1px solid #F3C623;
+  border-radius: 8px;
+}
+
+/* neutralize theme's inner border effect for this scheme */
+.color-scheme-1 .button:after,
+.color-scheme-1 .shopify-challenge__button:after,
+.color-scheme-1 .customer button:after {
+  box-shadow: none;
+}
+
+/* hover: gold fill with black text */
+.color-scheme-1 .button:not([disabled]):hover,
+.color-scheme-1 .shopify-challenge__button:hover,
+.color-scheme-1 .customer button:not([disabled]):hover {
+  background-color: #F3C623;
+  color: #000000;
+  border-color: #F3C623;
+}
+
+/* remove default hover ::after border animation */
+.color-scheme-1 .button:not([disabled]):hover::after,
+.color-scheme-1 .shopify-challenge__button:hover::after,
+.color-scheme-1 .customer button:not([disabled]):hover::after {
+  box-shadow: none;
+}
+
+/* focus-visible: accessible luxe focus */
+.color-scheme-1 .button:focus-visible,
+.color-scheme-1 .button.focused,
+.color-scheme-1 .shopify-challenge__button:focus-visible,
+.color-scheme-1 .customer button:focus-visible {
+  box-shadow: 0 0 0 4px var(--luxe-focus);
+}
+
+/* disabled state remains clear */
+.color-scheme-1 .button:disabled,
+.color-scheme-1 .button[aria-disabled='true'],
+.color-scheme-1 .customer button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ===================== Cart Drawer Width (Responsive) ===================== */
+.cart-drawer .drawer__inner {
+  width: min(60rem, 100vw);
+  max-width: 100vw;
+}
+
+@media screen and (max-width: 749px) {
+  .cart-drawer .drawer__inner {
+    width: 100vw;
+  }
+}
+
+/* ===================== Cart Drawer: Hide Header & Remove Underlines ===================== */
+.cart-drawer .drawer__header { display: none; }
+
+/* Remove underlines for all text/links inside the drawer */
+.cart-drawer a,
+.cart-drawer .link,
+.cart-drawer .underlined-link,
+.cart-drawer .inline-richtext a {
+  text-decoration: none;
+}
+.cart-drawer a:hover,
+.cart-drawer .link:hover,
+.cart-drawer .underlined-link:hover,
+.cart-drawer .inline-richtext a:hover {
+  text-decoration: none;
+}
