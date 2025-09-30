@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "image_banner": {
@@ -175,12 +166,37 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "catalog_download_Ux1": {
+      "type": "catalog-download",
+      "settings": {
+        "heading": "Explore Our Exclusive Designs — Download the Catalog",
+        "subheading": "Discover hundreds of one-of-a-kind hip-hop jewellery pieces. From bold statement chains to custom watches, our catalog is filled with designs crafted to express your style.",
+        "body_text": "Take a moment to browse through our curated collection. Whether you're searching for the perfect gift or designing something personal, our catalog offers the creativity and guidance you need.",
+        "button_label": "Download Our Catalog",
+        "button_link": "",
+        "note_text": "Get inspired. Start your next masterpiece.",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "muted_text_color": "#cccccc",
+        "body_text_color": "#bbbbbb",
+        "note_text_color": "#888888",
+        "button_bg": "#ffffff",
+        "button_text": "#000000",
+        "button_radius": "50px",
+        "max_width": "900px",
+        "padding_y": "80px",
+        "padding_x": "20px",
+        "heading_size": "2.75rem",
+        "subheading_size": "1.2rem"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "collection_list_JjyfXM",
-    "multicolumn_4zE8XR"
+    "multicolumn_4zE8XR",
+    "catalog_download_Ux1"
   ]
 }

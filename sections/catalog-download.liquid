@@ -1,0 +1,90 @@
+<section class="catalog-hero">
+  <div class="ch-container">
+    <div class="ch-header">
+      {%- if section.settings.heading != blank -%}
+        <h1 class="ch-title">{{ section.settings.heading }}</h1>
+      {%- endif -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="ch-subtitle">{{ section.settings.subheading }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.lead_text != blank -%}
+      <p class="ch-lead">{{ section.settings.lead_text }}</p>
+    {%- endif -%}
+
+    <div class="ch-grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'feature' -%}
+          <div class="ch-card" {{ block.shopify_attributes }}>
+            {%- if block.settings.icon != blank -%}
+              <div class="ch-card-icon">{{ block.settings.icon }}</div>
+            {%- endif -%}
+            <div class="ch-card-body">
+              {%- if block.settings.title != blank -%}
+                <h3 class="ch-card-title">{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <p class="ch-card-text">{{ block.settings.text }}</p>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.body_text != blank -%}
+      <p class="ch-body">{{ section.settings.body_text }}</p>
+    {%- endif -%}
+
+    <div class="ch-cta-wrap">
+      {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+        <a class="ch-cta" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+      {%- if section.settings.caption_text != blank -%}
+        <p class="ch-caption">{{ section.settings.caption_text }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Catalog download",
+  "tag": "section",
+  "class": "section section--catalog-download",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "The Artisan's Vault" },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Exclusive Jewelry Catalog" },
+    { "type": "textarea", "id": "lead_text", "label": "Lead text", "default": "Unveil a curated collection where timeless elegance meets modern artistry. Each piece in our catalog is a testament to unparalleled craftsmanship, designed to adorn and empower." },
+    { "type": "textarea", "id": "body_text", "label": "Body text", "default": "Your journey into the world of exclusive jewelry begins here. Download our catalog to explore the full collection and find the piece that speaks to you." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Download The Catalog" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "text", "id": "caption_text", "label": "Caption", "default": "A world of elegance awaits." }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature card",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon (text)", "default": "★" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Master Craftsmanship" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Hand-finished with precision and care." }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "Catalog download",
+      "category": "Custom",
+      "blocks": [
+        { "type": "feature", "settings": { "icon": "★", "title": "Master Craftsmanship", "text": "Hand-finished with precision and care." } },
+        { "type": "feature", "settings": { "icon": "✦", "title": "Exclusive Designs", "text": "Unique pieces you won't find anywhere else." } },
+        { "type": "feature", "settings": { "icon": "❖", "title": "Ethically Sourced", "text": "Precious metals and gems with a conscience." } },
+        { "type": "feature", "settings": { "icon": "✎", "title": "Bespoke Creations", "text": "Collaborate with us on your dream piece." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

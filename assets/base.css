@@ -82,6 +82,153 @@
   padding: 0 1.5rem;
 }
 
+/* Catalog Hero (non-editable) */
+.catalog-hero {
+  background-color: #000000;
+  color: #E0E0E0;
+}
+
+.catalog-hero .ch-container {
+  max-width: 68rem; /* ~1024px */
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: max(884px, 100vh);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.catalog-hero .ch-container > * {
+  width: 100%;
+}
+
+.catalog-hero .ch-header {
+  position: relative;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.catalog-hero .ch-title {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.catalog-hero .ch-subtitle {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-weight: 300;
+  color: #D4AF37; /* accent */
+  margin: 0;
+}
+
+.catalog-hero .ch-lead,
+.catalog-hero .ch-body {
+  max-width: 48rem; /* ~768px */
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: calc(1.4rem);
+  line-height: 1.75;
+  color: #9CA3AF; /* muted */
+  font-weight: 300;
+}
+
+.catalog-hero .ch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .catalog-hero .ch-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.catalog-hero .ch-card {
+  background: rgba(44, 44, 44, 0.5);
+  border: 1px solid #2C2C2C;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: border-color 300ms ease, transform 300ms ease;
+}
+
+.catalog-hero .ch-card:hover {
+  border-color: #D4AF37;
+}
+
+.catalog-hero .ch-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  border-radius: 9999px;
+  font-size: 1.5rem;
+  color: #D4AF37;
+  margin-right: 1rem;
+}
+
+.catalog-hero .ch-card-body {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.catalog-hero .ch-card-title {
+  margin: 0 0 0.25rem 0;
+  font-size: calc(1.25rem + 0.3rem);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.catalog-hero .ch-card-text {
+  margin: 0;
+  font-size: calc(0.875rem + 0.3rem);
+  color: #9CA3AF;
+  transition: color 300ms ease;
+}
+
+.catalog-hero .ch-card:hover .ch-card-text {
+  color: #E0E0E0;
+}
+
+.catalog-hero .ch-cta-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.catalog-hero .ch-cta {
+  display: inline-block;
+  background: #D4AF37;
+  color: #000000;
+  font-weight: 500;
+  font-size: calc(1.3rem);
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+  transition: transform 300ms ease, background 300ms ease;
+}
+
+.catalog-hero .ch-cta:hover {
+  background: #F0C419;
+  transform: translateY(-4px);
+}
+
+.catalog-hero .ch-caption {
+  margin: 0;
+  font-size: calc(0.875rem + 0.3rem);
+  color: #9CA3AF;
+}
+
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
@@ -1990,6 +2137,7 @@ input[type='checkbox'] {
 }
 
 .quantity__input[type='number'] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
