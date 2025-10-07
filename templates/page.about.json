@@ -1,0 +1,255 @@
+{
+  "sections": {
+    "about_intro": {
+      "type": "about-intro",
+      "settings": {
+        "heading": "About Us - Diamondrensu",
+        "text": "<p>Tumbakay Jewels was born in Surat, Gujarat—the diamond capital of the world. Rooted in generations of craftsmanship, we carry forward a vision to create jewelry that is timeless in spirit yet modern in design. Every piece reflects a balance of tradition and innovation, crafted with ethically sourced stones, carefully chosen metals, and meticulous finishing.</p><p>For us, jewelry is more than adornment—it is memory made tangible. From engagement rings that carry your forever to statement pieces worn across the globe, we design with precision, integrity, and beauty. Tumbakay Jewels is not just made in Surat—it carries a piece of Surat's soul to the world.</p>",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "about_values": {
+      "type": "about-values",
+      "settings": {
+        "heading": "Our Values, Vision & Mission",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      },
+      "blocks": {
+        "value_1": {
+          "type": "value",
+          "settings": {
+            "icon": "⚖️",
+            "title": "Our Value",
+            "text": "<p>Credibility, Accountability, Transparency, and Integrity. We cherish and adhere to these values daily when working with employees, customers and associates.</p>"
+          }
+        },
+        "value_2": {
+          "type": "value",
+          "settings": {
+            "icon": "🌟",
+            "title": "Our Vision",
+            "text": "<p>Becoming one of the world's leading suppliers of premium, eco-friendly, top-quality, and well-manufactured lab-grown diamonds and moissanite jewelry.</p>"
+          }
+        },
+        "value_3": {
+          "type": "value",
+          "settings": {
+            "icon": "🎯",
+            "title": "Our Mission",
+            "text": "<p>Diamondrensu commits wholeheartedly to the pursuit of excellence while making a positive societal and environmental impact.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "value_1",
+        "value_2",
+        "value_3"
+      ]
+    },
+    "about_story": {
+      "type": "about-story",
+      "settings": {
+        "heading": "Our Story",
+        "text": "<p>Tumbakay Jewels was born in Surat, Gujarat—the city known as the heart of the world's diamond craft. What began as a small workshop with simple tools has grown into a studio where tradition meets modern design.</p><p>We specialize in custom-made jewelry—from bold pendants and iced-out chains to elegant rings and timeless daily wear. Every piece is carefully designed, cast, polished, and hand-set in-house, so you know the work is truly ours.</p><p>Transparency and trust are at the core of our process. Whether you choose gold, silver, moissanite, or lab-grown stones, we share every detail with you, including design updates and videos of your piece before shipping.</p><p>From Surat, India, we ship securely worldwide with safe payments and insured delivery. At Tumbakay Jewels, we don't just make jewelry—we craft your story in Gold and stone.</p>",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "about_features": {
+      "type": "about-features",
+      "settings": {
+        "heading": "Why Diamondrensu?",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      },
+      "blocks": {
+        "feature_1": {
+          "type": "feature",
+          "settings": {
+            "icon": "✈️",
+            "title": "Free Shipping Worldwide",
+            "text": "<p>We offer free shipping worldwide to ensure you receive your jewelry promptly and without any additional costs.</p>"
+          }
+        },
+        "feature_2": {
+          "type": "feature",
+          "settings": {
+            "icon": "💬",
+            "title": "24/7 Customer Service",
+            "text": "<p>Our dedicated customer service team is available 24/7 to assist you with any questions or concerns you may have.</p>"
+          }
+        },
+        "feature_3": {
+          "type": "feature",
+          "settings": {
+            "icon": "✓",
+            "title": "100% Money Back Guarantee",
+            "text": "<p>We offer a 100% money-back guarantee on all purchases to ensure your satisfaction.</p>"
+          }
+        },
+        "feature_4": {
+          "type": "feature",
+          "settings": {
+            "icon": "🛡️",
+            "title": "Diamondrensu's Trust",
+            "text": "<p>We are trusted by many customers and have a good reputation in the market.</p>"
+          }
+        },
+        "feature_5": {
+          "type": "feature",
+          "settings": {
+            "icon": "🏷️",
+            "title": "Unbeatable Market Price",
+            "text": "<p>We offer a competitive market price for our products.</p>"
+          }
+        },
+        "feature_6": {
+          "type": "feature",
+          "settings": {
+            "icon": "♻️",
+            "title": "Eco Friendly Element",
+            "text": "<p>Our lab-grown diamonds and moissanite stones are eco-friendly alternatives that deliver the brilliance and quality of mined diamonds while reflecting a commitment to a greener future.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6"
+      ]
+    },
+    "about_handmade": {
+      "type": "about-handmade",
+      "settings": {
+        "heading": "Handmade Jewelry with Love at Diamondrensu",
+        "text": "<p>At Diamondrensu, love and craftsmanship come together to create extraordinary jewelry. As innovators in lab-grown diamonds and moissanite jewelry, we take pride in designing pieces that captivate the eye while telling a story of sustainability and modern elegance.</p><p>Each jewel at Diamondrensu fuses art and science. Our lab-grown diamonds and moissanite stones aren't just eco-friendly alternatives – they're symbols of environmental stewardship. Carefully crafted, these stones deliver the brilliance and quality of mined diamonds while reflecting a commitment to a greener future.</p><p>Our skilled artisans pour their expertise and passion into every creation, transforming ethically sourced stones into timeless masterpieces. From radiant engagement rings to refined necklaces, each piece is perfectly handcrafted with precision and care. Their designs resonate with your values and milestones.</p>",
+        "button_label": "Discover Trending Lab-Grown Diamond & Moissanite Jewelry Gifts",
+        "button_link": "#",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "about_gallery": {
+      "type": "about-gallery",
+      "settings": {
+        "heading": "Giving Back - Your Purchase Has Power",
+        "subheading": "Ankit's Journey: Capturing Moments with Africa's Locals in Photos",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      },
+      "blocks": {
+        "gallery_1": {
+          "type": "gallery_item",
+          "settings": {
+            "placeholder_text": "📸 Photo 1"
+          }
+        },
+        "gallery_2": {
+          "type": "gallery_item",
+          "settings": {
+            "placeholder_text": "📸 Photo 2"
+          }
+        },
+        "gallery_3": {
+          "type": "gallery_item",
+          "settings": {
+            "placeholder_text": "📸 Photo 3"
+          }
+        },
+        "gallery_4": {
+          "type": "gallery_item",
+          "settings": {
+            "placeholder_text": "📸 Photo 4"
+          }
+        },
+        "gallery_5": {
+          "type": "gallery_item",
+          "settings": {
+            "placeholder_text": "📸 Photo 5"
+          }
+        },
+        "gallery_6": {
+          "type": "gallery_item",
+          "settings": {
+            "placeholder_text": "📸 Photo 6"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_1",
+        "gallery_2",
+        "gallery_3",
+        "gallery_4",
+        "gallery_5",
+        "gallery_6"
+      ]
+    },
+    "about_certifications": {
+      "type": "about-certifications",
+      "settings": {
+        "heading": "Certified by",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      },
+      "blocks": {
+        "cert_1": {
+          "type": "certification",
+          "settings": {
+            "placeholder_text": "CERT 1"
+          }
+        },
+        "cert_2": {
+          "type": "certification",
+          "settings": {
+            "placeholder_text": "CERT 2"
+          }
+        },
+        "cert_3": {
+          "type": "certification",
+          "settings": {
+            "placeholder_text": "CERT 3"
+          }
+        },
+        "cert_4": {
+          "type": "certification",
+          "settings": {
+            "placeholder_text": "CERT 4"
+          }
+        }
+      },
+      "block_order": [
+        "cert_1",
+        "cert_2",
+        "cert_3",
+        "cert_4"
+      ]
+    }
+  },
+  "order": [
+    "about_intro",
+    "about_values",
+    "about_story",
+    "about_features",
+    "about_handmade",
+    "about_gallery",
+    "about_certifications"
+  ]
+}

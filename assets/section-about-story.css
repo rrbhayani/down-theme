@@ -1,0 +1,37 @@
+.about-story {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 30px 20px;
+}
+
+.about-story__heading {
+  font-size: 28px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.about-story__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-story__text {
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+
+.about-story__text p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .about-story__heading {
+    font-size: 24px;
+  }
+}

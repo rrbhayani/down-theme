@@ -76,6 +76,16 @@
 
 /* base */
 
+/* Remove underline from all anchor tags */
+a {
+  text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
@@ -2941,12 +2951,13 @@ details[open] > .header__submenu {
 
 .header__menu-item {
   padding: 1.2rem;
-  text-decoration: none;
+  text-decoration: none !important;
   color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
+  text-decoration: none !important;
 }
 
 .header__menu-item span {
@@ -2954,16 +2965,16 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
+  text-decoration: none !important;
   text-underline-offset: 0.3rem;
 }
 
 details[open] > .header__menu-item {
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 
 details[open]:hover > .header__menu-item {
-  text-decoration-thickness: 0.2rem;
+  text-decoration: none !important;
 }
 
 details[open] > .header__menu-item .icon-caret {
@@ -2973,12 +2984,12 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  text-decoration: underline;
+  text-decoration: none !important;
   text-underline-offset: 0.3rem;
 }
 
 .header__menu-item:hover .header__active-menu-item {
-  text-decoration-thickness: 0.2rem;
+  text-decoration: none !important;
 }
 
 .header__submenu {
@@ -3016,7 +3027,7 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__submenu .header__menu-item:hover {
-  text-decoration-line: underline;
+  text-decoration: none !important;
 }
 
 .header__menu-item .icon-caret {
@@ -3031,7 +3042,50 @@ details[open] > .header__menu-item .icon-caret {
 
 header-menu > details,
 details-disclosure > details {
-  position: relative;
+  position: static;
+}
+
+/* Full-width horizontal dropdown submenu */
+.header__submenu.list-menu {
+  left: 0 !important;
+  right: 0 !important;
+  top: 90px !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  padding: 1.5rem 0 !important;
+}
+
+.header__submenu.list-menu > li {
+  display: inline-flex !important;
+  align-items: center !important;
+  position: relative !important;
+  margin: 0 !important;
+}
+
+.header__submenu.list-menu > li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(var(--color-foreground), 0.2);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__submenu .header__menu-item {
+  padding: 0.8rem 2rem !important;
+  white-space: nowrap !important;
+}
+
+/* Hide nested submenus in horizontal layout */
+.header__submenu .header__submenu {
+  display: none !important;
 }
 
 @keyframes animateMenuOpen {

@@ -1,0 +1,60 @@
+.about-handmade {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.about-handmade__heading {
+  font-size: 28px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.about-handmade__content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-handmade__text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.about-handmade__text p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.about-handmade__button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.about-handmade__button .button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #F3C623;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.about-handmade__button .button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .about-handmade__heading {
+    font-size: 24px;
+  }
+}
