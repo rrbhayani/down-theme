@@ -12,7 +12,6 @@
 .custom-jewelry-process {
   background-color: var(--luxe-bg);
   color: var(--luxe-text);
-  min-height: max(884px, 100dvh);
   line-height: 1.6;
 }
 
