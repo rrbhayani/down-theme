@@ -1,0 +1,228 @@
+/* Custom Jewelry Process Section Styles */
+.custom-jewelry-process {
+  --luxe-bg: #000000;
+  --luxe-text: #ffffff;
+  --luxe-accent: #F3C623;
+  --luxe-accent-contrast: #000000;
+  --luxe-muted: rgba(255, 255, 255, 0.6);
+  --luxe-sep: rgba(255, 255, 255, 0.06);
+  --luxe-focus: rgba(243, 198, 35, 0.12);
+}
+
+.custom-jewelry-process {
+  background-color: var(--luxe-bg);
+  color: var(--luxe-text);
+  min-height: max(884px, 100dvh);
+  line-height: 1.6;
+}
+
+.custom-jewelry-process__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .custom-jewelry-process__container {
+    padding: 6rem 1rem;
+  }
+}
+
+.custom-jewelry-process__header {
+  margin-bottom: 4rem;
+}
+
+.custom-jewelry-process__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+  color: var(--luxe-text);
+}
+
+@media (min-width: 768px) {
+  .custom-jewelry-process__title {
+    font-size: 3rem;
+  }
+}
+
+.custom-jewelry-process__description {
+  color: var(--luxe-muted);
+  font-size: 1rem;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .custom-jewelry-process__description {
+    font-size: 1.125rem;
+  }
+}
+
+.custom-jewelry-process__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .custom-jewelry-process__steps {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
+.custom-jewelry-process__step {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .custom-jewelry-process__step {
+    width: 33.333333%;
+  }
+}
+
+.custom-jewelry-process__step-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-jewelry-process__step-icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--luxe-sep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--luxe-accent);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.custom-jewelry-process__step-icon .material-icons-outlined {
+  font-size: 2.25rem;
+  color: var(--luxe-accent);
+}
+
+.custom-jewelry-process__step-number {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: var(--luxe-accent);
+  color: var(--luxe-accent-contrast);
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 4px solid var(--luxe-bg);
+}
+
+.custom-jewelry-process__step-text {
+  margin-left: 1.5rem;
+}
+
+.custom-jewelry-process__step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--luxe-text);
+  margin-bottom: 0.25rem;
+}
+
+.custom-jewelry-process__step-description {
+  color: var(--luxe-muted);
+  font-size: 0.875rem;
+}
+
+.custom-jewelry-process__connector {
+  flex-shrink: 0;
+  background-color: var(--luxe-sep);
+  border-radius: 9999px;
+}
+
+.custom-jewelry-process__connector--horizontal {
+  width: 4rem;
+  height: 0.25rem;
+}
+
+.custom-jewelry-process__connector--vertical {
+  width: 0.25rem;
+  height: 4rem;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-hidden {
+    display: block;
+  }
+  
+  .desktop-hidden {
+    display: none;
+  }
+}
+
+.custom-jewelry-process__footer {
+  margin-top: 5rem;
+}
+
+.custom-jewelry-process__button {
+  background-color: var(--luxe-accent);
+  color: var(--luxe-accent-contrast);
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.125rem;
+  box-shadow: 0 10px 15px -3px var(--luxe-focus);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-jewelry-process__button:hover {
+  background-color: rgba(243, 198, 35, 0.9);
+  text-decoration: none;
+  color: var(--luxe-accent-contrast);
+}
+
+.custom-jewelry-process__button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--luxe-focus);
+}
+
+.custom-jewelry-process__button-description {
+  color: var(--luxe-muted);
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+/* Text alignment utilities */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive utilities */
+@media (max-width: 767px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-hidden {
+    display: none;
+  }
+}

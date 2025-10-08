@@ -1,0 +1,209 @@
+{{ 'section-custom-jewelry-process.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="custom-jewelry-process color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="custom-jewelry-process__container">
+      <div class="custom-jewelry-process__header text-center">
+        {%- if section.settings.heading != blank -%}
+          <h1 class="custom-jewelry-process__title">
+            {{ section.settings.heading }}
+          </h1>
+        {%- endif -%}
+        
+        {%- if section.settings.description != blank -%}
+          <p class="custom-jewelry-process__description">
+            {{ section.settings.description }}
+          </p>
+        {%- endif -%}
+      </div>
+
+      <div class="custom-jewelry-process__steps">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'step' -%}
+              <div class="custom-jewelry-process__step" {{ block.shopify_attributes }}>
+                <div class="custom-jewelry-process__step-content">
+                  <div class="custom-jewelry-process__step-icon">
+                    <span class="material-icons-outlined">
+                      {{ block.settings.icon }}
+                    </span>
+                    <span class="custom-jewelry-process__step-number">{{ forloop.index }}</span>
+                  </div>
+                  <div class="custom-jewelry-process__step-text">
+                    {%- if block.settings.title != blank -%}
+                      <h3 class="custom-jewelry-process__step-title">{{ block.settings.title }}</h3>
+                    {%- endif -%}
+                    {%- if block.settings.description != blank -%}
+                      <p class="custom-jewelry-process__step-description">{{ block.settings.description }}</p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+              
+              {%- unless forloop.last -%}
+                <div class="custom-jewelry-process__connector custom-jewelry-process__connector--horizontal mobile-hidden"></div>
+                <div class="custom-jewelry-process__connector custom-jewelry-process__connector--vertical desktop-hidden"></div>
+              {%- endunless -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if section.settings.button_label != blank -%}
+        <div class="custom-jewelry-process__footer text-center">
+          <a href="{{ section.settings.button_link | default: '#' }}" class="custom-jewelry-process__button">
+            {{ section.settings.button_label }}
+          </a>
+          {%- if section.settings.button_description != blank -%}
+            <p class="custom-jewelry-process__button-description">
+              {{ section.settings.button_description }}
+            </p>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Jewelry Process",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your Vision, Our Craft"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Experience a seamless journey from a simple idea to an extraordinary piece of bespoke jewelry, crafted just for you."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Start Your Creation"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button_description",
+      "label": "Button description",
+      "default": "Turnaround time: 4-6 weeks. Unforgettable quality guaranteed."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Process Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Material Icon name",
+          "default": "lightbulb",
+          "info": "Enter the Material Icons name (e.g., lightbulb, view_in_ar, diamond)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Step title",
+          "default": "Share Your Idea"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Step description",
+          "default": "Tell us your inspiration and what you envision."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Jewelry Process",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "icon": "lightbulb",
+            "title": "Share Your Idea",
+            "description": "Tell us your inspiration and what you envision."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "view_in_ar",
+            "title": "Design & Approve",
+            "description": "We create a 3D model for you to review and perfect."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "diamond",
+            "title": "Receive Your Jewel",
+            "description": "Your masterpiece is handcrafted and delivered."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
